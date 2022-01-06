@@ -1,0 +1,9 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+    {% block layout_header_actions_account %}
+        <div class="col-auto">
+                <a id="searchButton" class="btn header-actions-btn">
+                    {% sw_include '@Storefront/storefront/layout/header/actions/search-widget.html.twig' %}
+                </a>
+        </div>
+        {{ parent() }}
+    {% endblock %}
